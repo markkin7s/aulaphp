@@ -1,0 +1,91 @@
+
+
+
+:root
+{
+    --corPrincipal: #020087;
+    --fonte: Verdana;
+    --margemInterna: 5px;
+
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.telefones
+{
+    background: var(--corPrincipal);
+    padding: 5px;
+    padding-right: 14%;
+    display: flex;
+    justify-content: end;
+}
+
+.telefones p a
+{
+    color: #fff;
+    text-decoration: none;  /* none underline line-through  */
+    margin-right: 30px;
+}
+
+/* <-------------------- TOPO DO SITE ----------------------> */
+
+header 
+{
+    height: 90px;
+    overflow: hidden; /* esconde o que passar do height/width */
+    display: flex;
+    align-items:center ;     /* alinhamento vertical */
+    justify-content: space-between ;  /* alinhamento horizontal */
+    padding: 30px 100px 0px 150px;
+}
+
+
+header figure 
+{
+    padding: var (var(--margemInterna));
+    width: 10%;
+    margin: var(--margemInterna)
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.esconde {
+    display: none;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    font: 1.2rem var(--fonte);
+    color: #333;
+    text-decoration: none;
+    padding: 6px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover, 
+.paginaAtual
+{
+    color: orange;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav ul li a:before 
+{
+    content:"H";
+    border-bottom: solid 3px --corPrincipal;
+    display: block;
+
+}
+
